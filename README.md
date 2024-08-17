@@ -24,3 +24,13 @@ int dot_product(int *vec1, int *vec2) {
 	return res;
 }
 ```
+
+### Saxpy
+y(i) = ax(i) + y(i)
+```C
+void saxpy(int *vec1, int *vec2, int a) {
+	for(int i = 0; i < VECTOR_SIZE; i++) {
+		vec2[i] += a * vec1[i];
+	}
+}
+```
