@@ -12,3 +12,15 @@ for(int i = 0; i < M; i++) {
     }
 }
 ```
+
+### Dot product
+c = ABcos => c = A<sup>T</sup>B
+```C
+int dot_product(int *vec1, int *vec2) {
+	int res = 0;
+	for(int i = 0; i < VECTOR_SIZE; i++) {
+		res += vec1[i] * vec2[i];
+	}
+	return res;
+}
+```
