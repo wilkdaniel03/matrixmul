@@ -34,3 +34,15 @@ void saxpy(int *vec1, int *vec2, int a) {
 	}
 }
 ```
+
+### Gaxpy
+y(i) = Ax(i) + y(i)
+```C
+void gaxpy(int *vec1, int *vec2, int mat[MATRIX_COL][MATRIX_ROW]) {
+	for(int i = 0; i < MATRIX_ROW; i++) {
+		for(int j = 0; j < MATRIX_COL; j++) {
+			vec2[i] += mat[i][j] * vec1[j];
+		}
+	}
+}
+```
